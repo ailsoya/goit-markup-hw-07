@@ -263,7 +263,7 @@ body {
 }
 
 .first-sect {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -272,6 +272,15 @@ body {
     justify-content: center;
     padding: 188px 0;
     margin: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .first-sect {
+        background-image: url('../images/people-office@2x.jpg');
+    }
 }
 
 .second-section {
