@@ -325,11 +325,11 @@ body {
     display: none;
 }
 
-.nav-button .is-open .icon-cross {
+.nav-button.is-open .icon-cross {
     display: block;
 }
 
-.nav-button .is-open .icon-menu {
+.nav-button.is-open .icon-menu {
     display: none;
 }
 
