@@ -243,7 +243,6 @@ body {
 }
 
 .contacts {
-    display: none;
     font-style: normal;
 }
 
@@ -298,12 +297,19 @@ body {
 }
 
 .nav-button {
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    border-radius: 4px;
+}
+
+.nav-button:hover, .nav-button:focus {
+    border: 2px solid orange;
 }
 
 .svgsvg {
@@ -333,7 +339,7 @@ body {
 }
 
 .ulone {
-    display: none;
+    display: flex;
     flex-direction: row;
     gap: 40px;
     padding-left: 0;
@@ -917,18 +923,6 @@ img {
 
     .fifth-section {
         padding: 120px 0;
-    }
-
-    .contacts {
-        display: block;
-    }
-
-    .ulone {
-        display: flex;
-    }
-
-    .nav-button {
-        display: none;
     }
 
     .ultwo {
