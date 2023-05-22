@@ -911,6 +911,10 @@ img {
         display: flex;
     }
 
+    .nav-button {
+        display: none;
+    }
+
     .ultwo {
         flex-direction: row;
         gap: 24px;
