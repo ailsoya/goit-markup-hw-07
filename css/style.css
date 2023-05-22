@@ -243,6 +243,7 @@ body {
 }
 
 .contacts {
+    display: none;
     font-style: normal;
 }
 
@@ -297,7 +298,7 @@ body {
 }
 
 .ulone {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 40px;
     padding-left: 0;
@@ -328,6 +329,15 @@ body {
 
 .lione:hover, .lione:focus, .lione:active {
     color: var(--link-cont);
+}
+
+.nav-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .ulcont {
@@ -486,7 +496,7 @@ body {
 }
 
 .email-inp {
-    background-color: var(--spanny);
+    background-color: transparent;
     color: var(--background);
     border: 1px solid var(--background);
     padding-left: 16px;
@@ -891,6 +901,14 @@ img {
 
     .fifth-section {
         padding: 120px 0;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .ulone {
+        display: flex;
     }
 
     .ultwo {
