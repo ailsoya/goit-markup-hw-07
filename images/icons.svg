@@ -106,7 +106,7 @@
         </symbol>
         <symbol id="nav-icon" viewBox="0 0 36 26">
             <path
-                d="M2 2H34M2 24H34M2 13H34" stroke="black" stroke-width="3" stroke-linecap="round" />
+                d="M2 2H34M2 24H34M2 13H34" stroke="#2e2f42" stroke-width="3" stroke-linecap="round" />
         </symbol>
     </defs>
 </svg>
