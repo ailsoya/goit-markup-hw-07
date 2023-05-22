@@ -297,6 +297,41 @@ body {
     margin: 0 332px 0 0;
 }
 
+.nav-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.svgsvg {
+    fill: var(--spanny);
+}
+
+.nav-button .icon-cross {
+    display: none;
+}
+
+.nav-button .is-open .icon-cross {
+    display: block;
+}
+
+.nav-button .is-open .icon-menu {
+    display: none;
+}
+
+.ulcont {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .ulone {
     display: none;
     flex-direction: row;
@@ -329,25 +364,6 @@ body {
 
 .lione:hover, .lione:focus, .lione:active {
     color: var(--link-cont);
-}
-
-.nav-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.ulcont {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin: 0;
-    padding-left: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .ultwo {
