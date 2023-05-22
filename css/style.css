@@ -474,6 +474,10 @@ body {
     color: var(--background);
 }
 
+.subscribe-block {
+    width: 100%;
+}
+
 .paragraphtwo {
     margin: 0;
     font-size: 16px;
@@ -924,6 +928,10 @@ img {
     }
 
     .email-inp {
-        width: 264px;
+        width: 100%;
+    }
+
+    .subscribe-block {
+        width: 100%;
     }
 }
