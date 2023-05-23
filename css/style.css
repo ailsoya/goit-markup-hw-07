@@ -953,6 +953,10 @@ img {
         justify-content: baseline;
     }
 
+    .nav-button {
+        display: none;
+    }
+
     .contacts {
         display: block;
     }
