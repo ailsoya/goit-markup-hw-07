@@ -18,14 +18,14 @@ body {
 }
 
 .container {
-    width: 396px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px 0 15px;
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (min-width: 396px) {
     .container {
-        width: 100%;
+        width: 396px;
     }
 }
 
