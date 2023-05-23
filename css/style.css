@@ -975,7 +975,7 @@ img {
     }
 
     .ulone {
-        display: none;
+        display: block;
     }
 
     .ultwo {
