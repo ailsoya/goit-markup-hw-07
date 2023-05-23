@@ -162,17 +162,6 @@ body {
     margin-bottom: 72px;
 }
 
-.sect-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--spanny);
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
 .smaller-title {
     margin-top: 0;
     margin-bottom: 8px;
@@ -180,6 +169,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--spanny);
 }
 
