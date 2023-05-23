@@ -43,6 +43,7 @@ body {
 }
 
 .big-header {
+    display: none;
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 48px;
@@ -54,6 +55,53 @@ body {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+.spoon {
+    color: var(--background);
+}
+
+.sect-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--spanny);
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.fork {
+    margin-bottom: 8px;
+}
+
+.smaller-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--spanny);
+}
+
+.smaller-title-sect2 {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--spanny);
+}
+
+.smaller-titletwo {
+    text-align: center;
 }
 
 .link {
@@ -148,40 +196,6 @@ body {
 
 .portfolio:hover, .portfolio:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.sect-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--spanny);
-    margin-top: 0;
-    margin-bottom: 72px;
-}
-
-.smaller-title {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--spanny);
-}
-
-.smaller-titletwo {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--spanny);
-    text-align: center;
 }
 
 .logo {
@@ -944,8 +958,24 @@ img {
         display: block;
     }
 
+    .big-header {
+        display: block;
+    }
+    
+    .spoon {
+        display: none;
+    }
+
+    .fork {
+        display: none;
+    }
+
+    .smaller-title-sect2 {
+        display: block;
+    }
+
     .ulone {
-        display: flex;
+        display: none;
     }
 
     .ultwo {
