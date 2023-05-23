@@ -40,6 +40,7 @@ body {
     min-height: 70px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .big-header {
@@ -148,7 +149,7 @@ body {
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
-    transition-property: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .but:hover, .but:focus {
@@ -225,6 +226,7 @@ body {
 }
 
 .foot-logo {
+    text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -271,7 +273,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .first-sect {
-        background-image: url('../images/people-office@2x.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office@2x.jpg');
     }
 }
 
@@ -314,6 +316,7 @@ body {
     border-radius: 4px;
     position: absolute;
     right: 16px;
+    z-index: 10;
 }
 
 .svgsvg {
@@ -333,17 +336,20 @@ body {
 }
 
 .menu-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
     background-color: var(--background);
-    position: absolute;
-    padding: 10px 35px 40px 40px;
-    top: 100%;
+    position: fixed;
+    padding: 80px 35px 40px 40px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
-        display: block;
+        transform: translatex(0);
     }
 }
 
@@ -352,7 +358,7 @@ body {
     flex-direction: column;
     gap: 40px;
     padding: 0;
-    margin: 0 0 284px 0;
+    margin-bottom: auto;
 }
 
 .addres-nav {
@@ -501,6 +507,7 @@ body {
     row-gap: 72px;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .firm {
@@ -657,19 +664,18 @@ body {
     letter-spacing: 0.02em;
     width: 264px;
     margin: 0;
+    text-align: start;
 }
 
 .footter {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .foot-text {
     margin-bottom: 72px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .media {
@@ -677,7 +683,6 @@ body {
 }
 
 .mediatec {
-    text-align: center;
     width: 100%;
     font-weight: 500;
     font-size: 16px;
@@ -975,10 +980,6 @@ img {
         width: 768px;
     }
 
-    .miniature {
-        display: none;
-    }
-
     .first-sect {
         max-width: 1050px;
         padding: 112px 0;
@@ -994,10 +995,6 @@ img {
 
     .fifth-section {
         padding: 96px 0;
-    }
-
-    .navigation {
-        justify-content: baseline;
     }
 
     .nav-button {
@@ -1054,7 +1051,7 @@ img {
     }
 
     .firm {
-        width: calc((100% - 48px) / 3);
+        width: 168px;
     }
 
     .footter {
@@ -1063,12 +1060,11 @@ img {
         column-gap: 24px;
         row-gap: 72px;
         align-items: baseline;
-        justify-content: center;
+        text-align: start;
     }
 
     .foot-text {
         margin-bottom: 0;
-        align-items: baseline;
     }
 
     .media {
@@ -1083,10 +1079,6 @@ img {
 
     .email-inp {
         width: 264px;
-    }
-
-    .mediatec {
-        text-align: start;
     }
 
     .subscribe-block {
@@ -1155,25 +1147,8 @@ img {
         padding: 120px 0;
     }
 
-    .navigation {
-        justify-content: baseline;
-    }
-
-    .nav-button {
-        display: none;
-    }
-
-    .contacts {
-        display: block;
-    }
-
     .big-header {
-        display: block;
         margin-bottom: 48px;
-    }
-    
-    .spoon {
-        display: none;
     }
 
     .fork {
@@ -1189,10 +1164,6 @@ img {
         gap: 40px;
     }
 
-    .ulone {
-        display: flex;
-    }
-
     .ultwo {
         flex-direction: row;
         gap: 24px;
@@ -1200,7 +1171,6 @@ img {
 
     .litwo {
         width: calc((100% - 72px) / 4);
-        text-align: start;
     }
 
     .ulfour {
@@ -1225,32 +1195,15 @@ img {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 0;
-        align-items: baseline;
     }
 
     .foot-text {
         margin-right: 120px;
         margin-bottom: 0;
-        align-items: baseline;
     }
 
     .media {
         margin-right: 80px;
-        margin-bottom: 0;
-    }
-
-    .that {
-        flex-direction: row;
-        width: auto;
-        gap: 24px;
-    }
-
-    .email-inp {
-        width: 264px;
-    }
-
-    .mediatec {
-        text-align: start;
     }
 
     /* portfolio */
@@ -1260,22 +1213,11 @@ img {
     }
 
     .ulbutton {
-        width: 100%;
-        flex-wrap: nowrap;
-        gap: 24px;
         margin-bottom: 72px;
-        justify-content: center;
-    }
-
-    .filter {
-        padding: 12px 24px;
     }
 
     .allres {
-        flex-wrap: wrap;
-        flex-direction: unset;
         row-gap: 48px;
-        column-gap: 24px;
     }
 
     .works {
