@@ -46,7 +46,7 @@ body {
     display: none;
     font-size: 56px;
     line-height: 1.07;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     max-width: 496px;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -81,7 +81,7 @@ body {
 
 .spoon {
     color: var(--background);
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .fork {
@@ -195,10 +195,11 @@ body {
     gap: 48px;
     justify-content: center;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .works {
-    width: 100%;
+    width: 396px;
 }
 
 .portfolio {
@@ -395,8 +396,6 @@ body {
     gap: 40px;
     margin: 0;
     padding-left: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .ulone {
@@ -971,6 +970,161 @@ img {
     fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .miniature {
+        display: none;
+    }
+
+    .first-sect {
+        max-width: 1050px;
+        padding: 112px 0;
+    }
+
+    .second-section {
+        padding: 96px 0;
+    }
+
+    .fourth-section {
+        padding: 96px 0;
+    }
+
+    .fifth-section {
+        padding: 96px 0;
+    }
+
+    .navigation {
+        justify-content: baseline;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .big-header {
+        display: block;
+    }
+    
+    .spoon {
+        display: none;
+    }
+
+    .ulcont {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ulone {
+        display: flex;
+    }
+
+    .ultwo {
+        flex-wrap: wrap;
+        flex-direction: inherit;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .litwo {
+        width: calc((100% - 24px) / 2);
+        text-align: start;
+    }
+
+    .ulfour {
+        flex-wrap: wrap;
+        flex-direction: inherit;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+
+    .workers {
+        width: 264px;
+    }
+
+    .customers {
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .firm {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footter {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .foot-text {
+        margin-bottom: 0;
+        align-items: baseline;
+    }
+
+    .media {
+        margin-bottom: 0;
+    }
+
+    .that {
+        flex-direction: row;
+        width: auto;
+        gap: 24px;
+    }
+
+    .email-inp {
+        width: 264px;
+    }
+
+    .mediatec {
+        text-align: start;
+    }
+
+    .subscribe-block {
+        display: block;
+        width: auto;
+    }
+
+    /* portfolio */
+
+    .table {
+        padding: 64px 0 96px;
+    }
+
+    .ulbutton {
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 24px;
+        margin-bottom: 64px;
+        justify-content: center;
+    }
+
+    .filter {
+        padding: 12px 24px;
+    }
+
+    .allres {
+        flex-wrap: wrap;
+        flex-direction: inherit;
+        row-gap: 72px;
+        column-gap: 24px;
+        justify-content: flex-start;
+    }
+
+    .works {
+        width: calc((100% - 24px) / 2);
+    }    
+}
+
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
@@ -1015,6 +1169,7 @@ img {
 
     .big-header {
         display: block;
+        margin-bottom: 48px;
     }
     
     .spoon {
@@ -1027,6 +1182,11 @@ img {
 
     .smaller-title-sect2 {
         display: block;
+    }
+
+    .ulcont {
+        flex-direction: row;
+        gap: 40px;
     }
 
     .ulone {
@@ -1063,6 +1223,8 @@ img {
 
     .footter {
         flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
         align-items: baseline;
     }
 
@@ -1111,7 +1273,7 @@ img {
 
     .allres {
         flex-wrap: wrap;
-        flex-direction:unset;
+        flex-direction: unset;
         row-gap: 48px;
         column-gap: 24px;
     }
