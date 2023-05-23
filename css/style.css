@@ -220,9 +220,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--link);
     text-transform: uppercase;
-    margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .foot-logo {
@@ -980,6 +977,10 @@ img {
         width: 768px;
     }
 
+    .logo {
+        margin-right: 120px;
+    }
+
     .first-sect {
         max-width: 1050px;
         padding: 112px 0;
@@ -1122,6 +1123,10 @@ img {
         width: 1158px;
     }
 
+    .logo {
+        margin-right: 76px;
+    }
+
     .miniature {
         display: flex;
     }
@@ -1185,10 +1190,6 @@ img {
     .customers {
         flex-wrap: nowrap;
         gap: 24px;
-    }
-
-    .firm {
-        width: calc((100% - 120px) / 6);
     }
 
     .footter {
